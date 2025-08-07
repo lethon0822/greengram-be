@@ -2,9 +2,9 @@ package com.green.greengram.application.user.model;
 
 import com.green.greengram.config.model.JwtUser;
 import lombok.Builder;
-import lombok.extern.slf4j.Slf4j;
+import lombok.Getter;
 
-@Slf4j
+@Getter
 @Builder
 public class UserSignInDto {
     private UserSignInRes userSignInRes; // 응답용

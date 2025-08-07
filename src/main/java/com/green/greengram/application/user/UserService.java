@@ -49,7 +49,7 @@ public class UserService {
 
     public UserSignInDto signIn(UserSignInReq req) {
         User user = userRepository.findByUid(req.getUid());
-        if(user == null || passwordEncoder.matches(req.getUpw(), user.getUpw())) {
+        if(user == null || !passwordEncoder.matches(req.getUpw(), user.getUpw())) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "아이디/비밀번호를 확인해 주십시오.");
         }
 
