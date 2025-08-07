@@ -28,9 +28,9 @@ public class User extends UpdatedAt {
     private String uid;
 
     @Column(nullable = true, length = 100)
-    private int pic;
+    private String pic;
 
     @Column(nullable = false, length = 100)
-    private int upw;
+    private String upw;
 
 }
