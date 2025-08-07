@@ -1,5 +1,6 @@
 package com.green.greengram.application.user;
 
+import com.green.greengram.application.user.model.UserSignInReq;
 import com.green.greengram.application.user.model.UserSignUpReq;
 import com.green.greengram.config.model.ResultResponse;
 import jakarta.validation.Valid;
@@ -25,6 +26,12 @@ public class UserController {
         log.info("pic: {}", pic != null ? pic.getOriginalFilename() : pic);
         userService.signUp(req, pic);
         return new ResultResponse<>("돼라 좀", 1);
+    }
+
+    @PostMapping("sign-in")
+    public ResultResponse<?> signIn(@Valid @RequestPart UserSignInReq req){
+        log.info("req: {}", req);
+        return null;
     }
 
 }
