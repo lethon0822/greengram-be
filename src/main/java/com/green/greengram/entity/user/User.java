@@ -1,6 +1,7 @@
-package com.green.greengram.entity;
+package com.green.greengram.entity.user;
 
 import com.green.greengram.config.enumcode.EnumUserRole;
+import com.green.greengram.entity.UpdatedAt;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

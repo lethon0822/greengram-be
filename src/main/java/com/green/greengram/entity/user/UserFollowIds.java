@@ -1,7 +1,6 @@
-package com.green.greengram.entity;
+package com.green.greengram.entity.user;
 
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.Embedded;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;

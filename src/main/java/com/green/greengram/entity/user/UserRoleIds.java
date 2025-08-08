@@ -1,4 +1,4 @@
-package com.green.greengram.entity;
+package com.green.greengram.entity.user;
 
 import com.green.greengram.config.enumcode.EnumUserRole;
 import jakarta.persistence.Column;
@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Embeddable
 @EqualsAndHashCode
 public class UserRoleIds implements Serializable {
-    private Long userId;
+    private long userId;
     @Column(length = 2)
     private EnumUserRole roleCode;
 }

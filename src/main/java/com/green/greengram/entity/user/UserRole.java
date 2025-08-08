@@ -1,4 +1,4 @@
-package com.green.greengram.entity;
+package com.green.greengram.entity.user;
 
 import jakarta.persistence.*;
 import lombok.*;
